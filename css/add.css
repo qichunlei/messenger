@@ -1,0 +1,285 @@
+a:hover{
+	text-decoration: none;
+	cursor: pointer;
+}
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td{
+	vertical-align: middle !important;
+}
+input,button{
+	outline: none !important;
+}
+/*选择框样式*/
+.check {
+	position: relative;
+	float: left;
+	height: 50px;
+	/*line-height: 50px;*/
+	
+}
+.check>div{
+	height: 40px;
+	margin-top: 6px;
+	line-height: 40px;
+	display: block;
+	color: #FFFFFF;
+	padding: 0 30px;
+	font-size: 20px;
+	cursor: pointer;
+	background: #49586e;
+	border: 1px solid #7a7676;
+	border-radius: 5px;
+}
+.check>div a{
+	color: #FFFFFF;
+}
+.check>div span{
+	float: right;
+	/*margin-right: 10px;*/
+	width: 0;
+	height: 0;
+	border: 5px solid;
+	border-color: #FFFFFF transparent;
+	border-bottom: none;
+	display: block;
+	margin-top: 15px;
+	margin-left: 22px;
+}
+
+.check ul{
+	height: 200px;
+	padding-left: 20px;
+	overflow: auto;
+	position: absolute;
+	top: 50px;
+	left: 0;
+	background: #49586e;
+	z-index: 99;
+	display: none;
+}
+.check ul li{
+	width: 200px;
+	height: 40px;
+	line-height: 40px;
+	list-style: none;
+	color: #FFFFFF;
+}
+.check ul li a{
+	color: #FFFFFF;
+}
+.scrollbar{
+    width: 30px;
+    float: right;
+}
+.test-1::-webkit-scrollbar {/*滚动条整体样式*/
+        width: 10px;     /*高宽分别对应横竖滚动条的尺寸*/
+        height: 1px;
+    }
+.test-1::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+        border-radius: 10px;
+         -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+        background: #65cea7;
+    }
+.test-1::-webkit-scrollbar-track {/*滚动条里面轨道*/
+        -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+        border-radius: 10px;
+        background: #EDEDED;
+    }
+    
+#sidebar-left ul li i.iconColor{
+	color: #FFFFFF;
+}
+
+ul.notification-menu li a span{
+	display: inline-block;
+}
+
+/*index  部分样式*/
+.index_box{
+	border: 1px solid #CCCCCC;
+}
+th,tr,td{
+	border: none !important;
+}
+.green{
+	color: green;
+	font-size: 20px;
+}
+.red{
+	color: red;
+	font-size: 20px;
+}
+
+/*basic_setup   部分样式修改*/
+.form_basic1,.form_basic2,.form_basic3,.form_basic4,.form_basic5,.form_basic6{
+	display: none;
+}
+
+/*basic_table   部分样式修改*/
+.add_loginway{
+	text-align: center;
+	line-height: 100px;
+}
+.add_loginway select{
+	width: 15%;
+	display: inline-block;
+}
+.add_loginway button{
+	display: inline-block;
+	border: none;
+	background: none;
+	font-size: 20px;
+	margin-left: 5px !important;
+}
+.form_basic{
+	border-top: 1px solid #DDDDDD;
+}
+.form_basic h4{
+	line-height: 40px;
+	padding: 20px;
+}
+.form_basic div span{
+	width: 100px;
+	text-align: right;
+	display: inline-block;
+	margin-right: 20px;
+}
+.form_basic div input{
+	width: 15%;
+	display: inline-block;
+}
+.form_basic button{
+	margin-left: 30%;
+	margin-bottom: 20px;
+}
+
+/*channel   部分样式调整*/
+.channel_list{
+	border: 1px solid #CCCCCC;
+	padding: 10px !important;
+}
+.channel_list table th{
+	border-bottom: 1px solid #CCCCCC !important;
+}
+.channel_list table th:nth-child(2):hover{
+	cursor: pointer;
+}
+.channel_list table td{
+	vertical-align: middle !important;
+}
+.channel_list table td input{
+	margin-top: 15px;
+}
+.channel_list table td button{
+	margin: 0 auto;
+	display: block;
+}
+
+/*dynamic_table   修改部分样式*/
+select.dynamic_table{
+	width: 20%;
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 0;
+	margin-left: 20px;
+}
+button.dynamic_table_cx{
+	margin-left: 10%;
+	display: inline-block;
+}
+button.dynamic_table_add{
+	margin-right: 10%;
+	float: right;
+}
+
+/*topup_gear    部分样式调整*/
+table.topup_gear tr td select,table.topup_gear tr td input{
+	margin-left: 0;
+	margin-bottom: 0;
+	width: 50%;
+}
+section.topup_gear header select{
+	width: 10%;
+}
+section.topup_gear header button{
+	margin-left: 20%;
+}
+
+/*user_query  部分样式修改*/
+section.user_query input{
+	width: 15%;
+	display: inline-block;
+	margin-left: 5%;
+}
+section.user_query heade{
+	vertical-align: middle;
+}
+section.user_query header>span{
+	display: inline-table !important;
+	vertical-align: middle;
+}
+section.user_query header>span input.form-control{
+	width: 15%;
+	display: block;
+	float: left;
+}
+section.user_query header>span input.dpd1{
+	width: 44%;
+}
+section.user_query header>span input.dpd2{
+	width: 44%;
+	margin-left: 0;
+}
+section.user_query header>span span.input-group-addon{
+	width: auto;
+	padding: 9px;
+	float: left;
+}
+section.user_query button{
+	margin-left: 3%;
+}
+section.user_query header>div{
+	float: left;
+	width: 80%;
+}
+
+/*replenishment  部分样式修改*/
+section.order_mycard table tbody>tr>td>input{
+	width: 20%;
+}
+section.order_mycard table tbody tr td span{
+	width: 200px;
+	display: inline-block;
+}
+
+/*topup_offline  部分样式修改*/
+section.topup_offline header{
+	vertical-align: middle;
+	height: 70px;
+}
+section.topup_offline header>div{
+	float: left;
+	height: 40px;
+	line-height: 40px;
+}
+section.topup_offline header>div:nth-child(2){
+	margin-left: 5%;
+}
+section.topup_offline header button{
+	margin-right: 5%;
+}
+.topup_offline_form tbody tr td label{
+	width: 300px;
+	display: inline-block;
+}
+.topup_offline_form tbody tr td img{
+	display: inline-block;
+}
+.topup_offline_form tbody tr td select{
+	margin-left: 0;
+	width: 20%;
+}
+.topup_offline_form tbody tr td input{
+	display: inline-block;
+	width: 20%;
+	margin-bottom: 0;
+}

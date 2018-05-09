@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="ThemeBucket">
+  <link rel="shortcut icon" href="#" type="image/png">
+
+  <title></title>
+
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-responsive.css" rel="stylesheet">
+  <!--ios7-->
+	<link rel="stylesheet" type="text/css" href="js/ios-switch/switchery.css" />
+	
+	<!--icheck-->
+	<link href="js/iCheck/skins/minimal/minimal.css" rel="stylesheet">
+	<link href="js/iCheck/skins/minimal/red.css" rel="stylesheet">
+	<link href="js/iCheck/skins/minimal/green.css" rel="stylesheet">
+	<link href="js/iCheck/skins/minimal/blue.css" rel="stylesheet">
+	<link href="js/iCheck/skins/minimal/yellow.css" rel="stylesheet">
+	<link href="js/iCheck/skins/minimal/purple.css" rel="stylesheet">
+	
+	<link href="js/iCheck/skins/square/square.css" rel="stylesheet">
+	<link href="js/iCheck/skins/square/red.css" rel="stylesheet">
+	<link href="js/iCheck/skins/square/green.css" rel="stylesheet">
+	<link href="js/iCheck/skins/square/blue.css" rel="stylesheet">
+	<link href="js/iCheck/skins/square/yellow.css" rel="stylesheet">
+	<link href="js/iCheck/skins/square/purple.css" rel="stylesheet">
+	
+	<link href="js/iCheck/skins/flat/grey.css" rel="stylesheet">
+	<link href="js/iCheck/skins/flat/red.css" rel="stylesheet">
+	<link href="js/iCheck/skins/flat/green.css" rel="stylesheet">
+	<link href="js/iCheck/skins/flat/blue.css" rel="stylesheet">
+	<link href="js/iCheck/skins/flat/yellow.css" rel="stylesheet">
+	<link href="js/iCheck/skins/flat/purple.css" rel="stylesheet">
+  <style>
+  	body{
+  		background: #FFFFFF;
+  	}
+  	button,textarea,input{
+  		outline: none;
+  	}
+  	.main-content{
+  		margin-left: 0;
+  		padding-top: 40px !important;
+  	}
+  	.main-content div.choose:nth-child(1)>i{
+  		margin: 0 10px;
+  	}
+  	.main-content div.choose{
+  		float: left;
+  		height: 40px;
+  		line-height: 40px;
+  		cursor: pointer;
+  	}
+  	.main-content div.choose:nth-child(3){
+  		margin-left: 200px;
+  	}
+  	.main-content div.row{
+  		clear: both;
+  	}
+  	.add_menu,.submenu{
+  		display: none;
+  		background: rgba(0,0,0,.1);
+  		padding: 20px 0;
+  	}
+  	.submenu{
+  		margin-top: 20px;
+  	}
+  	.wrapper input.js-switch-teal{
+  	
+  	}
+  	.switchery{
+  		width: 30px;
+  		height: 20px;
+  	}
+  	.switchery > small{
+  		width: 17px;
+  		height: 17px;
+  	}
+  	.welcome div:nth-child(1) span,.fixed_menu div:nth-child(1) span{
+  		margin-right: 20px;
+  		font-size: 20px;
+  	}
+  	.welcome,.fixed_menu{
+  		width: 800px;
+  		margin: 0 auto;
+  		border: 1px solid #CCCCCC;
+  	}
+  	.fixed_menu{
+  		margin-top: 30px;
+  	}
+  	.welcome textarea{
+  		width: 500px;
+  		height: 200px;
+  		display: block;
+  		margin: 10px 0;
+  	}
+  	.fixed_menu ol{
+  		width: 100%;
+  		list-style: none;
+  		display: block;
+  		padding: 0;
+  		
+  	}
+  	.fixed_menu ol li{
+  		height: 40px;
+  		line-height: 40px;
+  		background: #ddd;
+  		border-bottom: 1px solid #FFFFFF;
+  	}
+  	.fixed_menu ol li div:nth-child(2){
+  		margin-left: 200px;
+  	}
+  	ol li div.add{
+  		width: 300px;
+  	}
+  </style>
+  
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body class="sticky-header">
+
+<!--<section>-->
+    <!-- main content start-->
+    <div class="main-content" >
+        <!--body wrapper start-->
+        <div class="wrapper welcome">
+        	<div>
+        		<span>欢迎语</span>
+        		<textarea></textarea>
+        		<button class="btn btn-default">保存</button>
+        	</div>
+        </div>
+        <div class="wrapper fixed_menu">
+        	<div>
+        		<span>固定菜单</span>
+        		
+        	允许用户输入？<input type="checkbox" class="js-switch-teal" />
+        	</div>
+        	<div class="choose add"><i class="fa fa-plus"></i>&nbsp;&nbsp;ADD MENU ITEM</div>
+        	<!--<div class="choose edit">Edit Submenu&nbsp;&nbsp;<i class="fa fa-angle-right"></i></div>-->
+        	<div style="clear: both;"></div>
+        	<ol>
+        		<li>
+        			<div class="choose add">&nbsp;&nbsp;ADD MENU ITEM</div>
+        			<div class="choose edit">Edit Submenu&nbsp;&nbsp;<i class="fa fa-angle-right"></i></div>
+        			<div class="choose fa fa-times remove" style="margin-left: 30px;"></div>
+        		</li>
+        		<li>
+        			<div class="choose add">&nbsp;&nbsp;ADD MENU ITEM111111111</div>
+        			<div class="choose edit">Edit Submenu&nbsp;&nbsp;<i class="fa fa-angle-right"></i></div>
+        			<div class="choose fa fa-times remove" style="margin-left: 30px;"></div>
+        		</li>
+        	</ol>
+        	
+          <div class="row add_menu">
+          	<input class="form-control m-bot15" type="text" placeholder="" style="width: 30%; margin-left: 2%;" />
+                <div class="col-md-12">
+                    <section class="panel">
+                        <header class="panel-heading custom-tab ">
+                            <ul class="nav nav-tabs">
+                                <li class="active">
+                                    <a href="#home" data-toggle="tab">Blocks</a>
+                                </li>
+                                <li class="">
+                                    <a href="#about" data-toggle="tab">Url</a>
+                                </li>
+                                <li class="">
+                                    <a href="#profile" data-toggle="tab" class="editsubmenu">Submenu</a>
+                                </li>
+                            </ul>
+                        </header>
+                        <div class="panel-body">
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="home">
+                                	<label for="exampleInputFile">Blocks：</label>
+                                  <input class="form-control m-bot15" type="text" placeholder="" />
+                                </div>
+                                <div class="tab-pane" id="about">
+                                	<label for="exampleInputFile">Url：</label>
+                                	<input class="form-control m-bot15" type="text" placeholder="" />
+                                </div>
+                                <div class="tab-pane" id="profile">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="row submenu">
+            	<p style="font-weight: bold; padding-left: 2%;">Submenu</p>
+            	<input class="form-control m-bot15" type="text" placeholder="" style="width: 30%; margin-left: 2%;" />
+                <div class="col-md-12">
+										
+                    <section class="panel">
+                        <header class="panel-heading custom-tab ">
+                        		
+                            <ul class="nav nav-tabs">
+                                <li class="active">
+                                    <a href="#home1" data-toggle="tab">Blocks</a>
+                                </li>
+                                <li class="">
+                                    <a href="#about1" data-toggle="tab">Url</a>
+                                </li>
+                                <li class="">
+                                    <a href="#profile1" data-toggle="tab">Submenu</a>
+                                </li>
+                            </ul>
+                        </header>
+                        <div class="panel-body">
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="home1">
+                                	<label for="exampleInputFile">Blocks：</label>
+                                  <input class="form-control m-bot15" type="text" placeholder="" />
+                                </div>
+                                <div class="tab-pane" id="about1">
+                                	<label for="exampleInputFile">Url：</label>
+                                	<input class="form-control m-bot15" type="text" placeholder="" />
+                                </div>
+                                <div class="tab-pane" id="profile1">
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!--body wrapper end-->
+
+
+
+    </div>
+    <!-- main content end-->
+<!--</section>-->
+
+<!-- Placed js at the end of the document so the pages load faster -->
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/modernizr.min.js"></script>
+<script src="js/jquery.nicescroll.js"></script>
+
+<!--ios7-->
+<script src="js/ios-switch/switchery.js" ></script>
+<script src="js/ios-switch/ios-init.js" ></script>
+
+<!--icheck -->
+<script src="js/iCheck/jquery.icheck.js"></script>
+<script src="js/icheck-init.js"></script>
+<!--multi-select-->
+<script type="text/javascript" src="js/jquery-multi-select/js/jquery.multi-select.js"></script>
+<script type="text/javascript" src="js/jquery-multi-select/js/jquery.quicksearch.js"></script>
+<script src="js/multi-select-init.js"></script>
+<!--spinner-->
+<script type="text/javascript" src="js/fuelux/js/spinner.min.js"></script>
+<script src="js/spinner-init.js"></script>
+<!--file upload-->
+<script type="text/javascript" src="js/bootstrap-fileupload.min.js"></script>
+<!--tags input-->
+<script src="js/jquery-tags-input/jquery.tagsinput.js"></script>
+<script src="js/tagsinput-init.js"></script>
+<!--bootstrap input mask-->
+<script type="text/javascript" src="js/bootstrap-inputmask/bootstrap-inputmask.min.js"></script>
+
+
+<!--common scripts for all pages-->
+<script src="js/scripts.js"></script>
+<script>
+	$(function () {
+		$('.add_menu').css({'display':'none'});
+		$('.submenu').css({'display':'none'});
+		$('.add').click(function(){
+			$('.add_menu').css({'display':'block'});
+		});
+		$('.edit').click(function(){
+			$('.submenu').css({'display':'block'});
+		});
+		$('.editsubmenu').click(function(){
+			$('.submenu').css({'display':'block'});
+		});
+		$('ol div.add').click(function(){
+			$('.add_menu').css({'display':'none'});
+			$('.submenu').css({'display':'block'});
+		});
+		$('.remove').click(function(){
+			$(this).parent().remove();
+		});
+	})
+</script>
+</body>
+</html>
